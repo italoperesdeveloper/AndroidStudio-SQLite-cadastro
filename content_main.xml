@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtEmpName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emp Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtEmpAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emp Address" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txtEmpCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emp City" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/txtEmpState"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emp State" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/txtEmpMobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Emp Mobile" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="fill_parent" android:textStyle="bold" android:text="SAVE"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
